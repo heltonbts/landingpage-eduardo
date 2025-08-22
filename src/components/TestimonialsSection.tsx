@@ -3,34 +3,39 @@
 import { motion } from 'framer-motion';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Quote, Star } from 'lucide-react';
+import David from '../assets/david_dias.jpg'
+import Marcelo from '../assets/marcelo_monteiro.jpg'
+import Andrea from '../assets/Andrea_Rodrigues.png'
+import Denilson from '../assets/Denilson_Motta.jpg'
+import Eduardo from '../assets/eduardo.png'
 
 const testimonials = [
   {
     name: 'David D.',
     role: 'Aluno do Ebook',
     avatarFallback: 'MC',
-    image: '/public/david_dias.jpg',
+    image: David,
     testimonial: 'Eu passei anos em cursinhos e não saía do lugar. Com este método, em duas semanas eu já estava formando frases que nunca imaginei. É direto ao ponto e realmente funciona.',
   },
   {
     name: 'Marcelo M.',
     role: 'Aluno do Ebook',
     avatarFallback: 'JP',
-    image: '/public/marcelo_monteiro.jpg',
+    image: Marcelo,
     testimonial: 'O medo de errar a gramática sempre me travava. A abordagem da tradução literal tirou esse peso. Hoje, eu simplesmente falo com muito mais confiança.',
   },
   {
     name: 'Andrea R.',
     role: 'Aluna do Ebook',
     avatarFallback: 'CS',
-    image: '/public/Andrea_Rodrigues.png',
+    image: Andrea,
     testimonial: 'A \'muleta fonética\' que o Eduardo ensina foi um divisor de águas! Finalmente consegui entender a pronúncia de um jeito simples e lógico. Recomendo demais.',
   },
   {
     name: 'Denilson M.',
     role: 'Aluno do Ebook',
     avatarFallback: 'CS',
-    image: '/public/Denilson_Motta.jpg',
+    image: Denilson,
     testimonial: `De todos os cursos que eu havia feito, nenhum me mostrou essa técnica de forma tão clara e eficiente. Aprender comtradução literal reestrutura a nova língua em nossa cabeça de
 forma que aprendemos como o inglês realmente funciona na
 hora de traduzir. É uma metologia que acelera seu
@@ -83,7 +88,7 @@ export function TestimonialsSection() {
           className="w-full max-w-4xl p-8 rounded-2xl bg-gray-900/50 backdrop-blur-sm border border-indigo-500/20 flex flex-col sm:flex-row items-center gap-8"
         >
           <Avatar className="h-24 w-24 sm:h-32 sm:w-32 border-2 border-indigo-500/50">
-            <AvatarImage src="/public/eduardo.png" alt="Eduardo Augusto Malaquias" />
+            <AvatarImage src={Eduardo} alt="Eduardo Augusto Malaquias" />
             <AvatarFallback className="text-3xl bg-gray-800 text-gray-300">EM</AvatarFallback>
           </Avatar>
           <div className="text-center sm:text-left">

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Check, Clock } from "lucide-react";
+import Ebook from '../assets/ebook.png'
 
 export function PricingSection() {
   const containerVariants = {
@@ -48,7 +49,7 @@ export function PricingSection() {
           <div className="absolute aspect-square w-full max-w-lg rounded-full bg-indigo-500/20 blur-3xl"></div>
           <div className="relative w-full max-w-sm h-[500px] flex items-center justify-center bg-gray-900/50 rounded-2xl border border-indigo-500/20 shadow-2xl shadow-indigo-900/30">
             <img
-              src="/public/ebook.png"
+              src={Ebook}
               alt="Capa do Ebook"
               className="object-contain"
             />
@@ -115,7 +116,6 @@ export function PricingSection() {
             </div>
           </div>
 
-          {/* Urgência / Escassez */}
           <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-400">
             <Clock className="h-4 w-4 animate-spin" />
             <p>
