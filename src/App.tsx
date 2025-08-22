@@ -63,11 +63,11 @@ function app() {
             variants={itemVariants}
             className="mt-4 flex flex-col items-center gap-4 sm:flex-row"
           >
-            <Button size="lg" className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-600/20">
+            <Button size="lg" className="!bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-600/20">
               <BookOpen className="mr-2 h-5 w-5" />
               Quero Aprender Agora
             </Button>
-            <Button size="lg" variant="ghost" className="group text-gray-300 hover:text-white">
+            <Button size="lg" className="group text-gray-300 hover:text-white !bg-indigo-600 hover:bg-indigo-500">
               Saber mais
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
