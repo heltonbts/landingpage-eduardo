@@ -22,8 +22,7 @@ export function Faq() {
 
         {/* Componente Acordeão */}
         <Accordion type="single" collapsible className="w-full">
-          {/* Cada AccordionItem agora tem seu próprio estilo */}
-          <AccordionItem value="item-1" className="mb-4 rounded-lg border border-gray-800 bg-gray-900/50 shadow-md">
+          <AccordionItem value="item-1" className="mb-4 rounded-lg !border !border-gray-800 !bg-gray-900/50 shadow-md">
             <AccordionTrigger className="px-6 py-4 text-left font-semibold text-white hover:no-underline">
               Para quem é este ebook? Funciona para quem é iniciante total?
             </AccordionTrigger>
@@ -32,7 +31,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-2" className="mb-4 rounded-lg border border-gray-800 bg-gray-900/50 shadow-md">
+          <AccordionItem value="item-2" className="mb-4 rounded-lg !border !border-gray-800 !bg-gray-900/50 shadow-md">
             <AccordionTrigger className="px-6 py-4 text-left font-semibold text-white hover:no-underline">
               O método da "Tradução Literal" não vai me fazer falar um inglês "errado"?
             </AccordionTrigger>
@@ -41,7 +40,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-3" className="mb-4 rounded-lg border border-gray-800 bg-gray-900/50 shadow-md">
+          <AccordionItem value="item-3" className="mb-4 rounded-lg !border !border-gray-800 !bg-gray-900/50 shadow-md">
             <AccordionTrigger className="px-6 py-4 text-left font-semibold text-white hover:no-underline mt-3">
               O que eu recebo exatamente ao comprar o produto?
             </AccordionTrigger>
@@ -50,7 +49,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-4" className="mb-4 rounded-lg border border-gray-800 bg-gray-900/50 shadow-md">
+          <AccordionItem value="item-4" className="mb-4 rounded-lg !border !border-gray-800 !bg-gray-900/50 shadow-md">
             <AccordionTrigger className="px-6 py-4 text-left font-semibold text-white hover:no-underline">
               Como e quando receberei o acesso?
             </AccordionTrigger>
@@ -59,7 +58,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-5" className="mb-4 rounded-lg border border-gray-800 bg-gray-900/50 shadow-md">
+          <AccordionItem value="item-5" className="mb-4 rounded-lg !border !border-gray-800 !bg-gray-900/50 shadow-md">
             <AccordionTrigger className="px-6 py-4 text-left font-semibold text-white hover:no-underline">
               E se eu não gostar ou não me adaptar? Tenho alguma garantia?
             </AccordionTrigger>
@@ -68,7 +67,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-6" className="rounded-lg border border-gray-800 bg-gray-900/50 shadow-md">
+          <AccordionItem value="item-6" className="rounded-lg !border !border-gray-800 !bg-gray-900/50 shadow-md">
             <AccordionTrigger className="px-6 py-4 text-left font-semibold text-white hover:no-underline">
               Preciso de muito tempo por dia para estudar?
             </AccordionTrigger>
