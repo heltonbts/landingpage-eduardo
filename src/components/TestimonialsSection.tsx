@@ -1,5 +1,3 @@
-// src/components/TestimonialsSection.jsx
-
 import { motion } from "framer-motion";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Quote, Star, Instagram, Phone } from "lucide-react";
@@ -31,7 +29,7 @@ fácil.`,
   },
   {
     name: "David D.",
-    role: "Aluno que testou e aprovou o método",
+    role: "Aluno que aprovou o método",
     avatarFallback: "MC",
     image: David,
     testimonial: `Finally, this new project "LEARN ENGLISH WITH
@@ -47,7 +45,7 @@ CORDIALLY / RESPECTFULLY `,
   },
   {
     name: "Marcelo M.",
-    role: "Aluno que testou e aprovou o método",
+    role: "Aluno que aprovou o método",
     avatarFallback: "JP",
     image: Marcelo,
     testimonial:
@@ -55,7 +53,7 @@ CORDIALLY / RESPECTFULLY `,
   },
   {
     name: "Andrea R.",
-    role: "Aluna que testou e aprovou o método",
+    role: "Aluna que aprovou o método",
     avatarFallback: "CS",
     image: Andrea,
     testimonial: `A tradução literal faz toda a diferença no processo
@@ -68,7 +66,7 @@ Recomendo.`,
   },
   {
     name: "Denilson M.",
-    role: "Aluno do Ebook",
+    role: "Aluno que aprovou o método",
     avatarFallback: "CS",
     image: Denilson,
     testimonial: `De todos os cursos que eu havia feito, nenhum me mostrou essa técnica de forma tão clara e eficiente. Aprender comtradução literal reestrutura a nova língua em nossa cabeça de
