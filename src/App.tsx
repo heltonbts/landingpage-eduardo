@@ -39,7 +39,7 @@ function app() {
             variants={itemVariants}
             className="rounded-full bg-white/10 px-4 py-1.5 text-sm text-gray-300 backdrop-blur-sm"
           >
-            Vagas abertas por tempo limitado. <a href="#pricing" className="font-semibold text-white underline underline-offset-2 hover:text-indigo-300">Garanta a sua →</a>
+            Em Oferta Somente <a href="#pricing" className="font-semibold text-white underline underline-offset-2 hover:text-indigo-300">Hoje</a>
           </motion.div>
 
           {/* Headline Principal */}
@@ -63,7 +63,7 @@ function app() {
             variants={itemVariants}
             className="mt-4 flex flex-col items-center gap-4 sm:flex-row"
           >
-            <Button size="lg" className="!bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-600/20">
+            <Button size="lg" className="!bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-600/20" onClick={() => window.location.href = '#oferta'}>
               <BookOpen className="mr-2 h-5 w-5" />
               Quero Aprender Agora
             </Button>

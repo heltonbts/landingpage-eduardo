@@ -10,6 +10,7 @@ import Denilson from "../assets/Denilson_Motta.jpg";
 import Eduardo from "../assets/eduardo.png";
 import Isabela from "../assets/isabela.jpg";
 import { Button } from "./ui/button";
+import VideoSection from "./Video";
 
 const testimonials = [
   {
@@ -199,6 +200,19 @@ export function TestimonialsSection() {
           ))}
         </div>
       </motion.div>
+
+      <div className="flex justify-center mx-auto px-4 mt-6 items-center">
+        <motion.div
+          variants={itemVariants}
+          className="w-full max-w-3xl"
+          whileHover={{ scale: 1.03, y: -5, transition: { duration: 0.2 } }}
+        >
+          <h2 className="text-3xl text-center sm:text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400 mt-4 mb-8">
+            O Professor Eduardo tem algo importante para te contar...
+          </h2>
+          <VideoSection />
+        </motion.div>
+      </div>
     </section>
   );
 }

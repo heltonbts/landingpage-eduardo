@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Check, Clock } from "lucide-react";
-import Ebook from '../assets/ebook.png'
+import Ebook from "../assets/ebook.png";
+import { handleClickButton } from "@/lib/utils";
 
 export function PricingSection() {
   const containerVariants = {
@@ -23,7 +24,7 @@ export function PricingSection() {
   };
 
   const valueItems = [
-    'O Ebook completo "De 3 Palavras a Professor Fluente"',
+    'Acesso ao método completo "Como Aprender Inglês Com Tradução Literal"',
     "Acesso a todas as Aulas em Vídeo (Bônus Exclusivo)",
     "Acesso Vitalício ao material e futuras atualizações",
     'A "Muleta Fonética" para destravar sua pronúncia',
@@ -48,11 +49,7 @@ export function PricingSection() {
         >
           <div className="absolute aspect-square w-full max-w-lg rounded-full bg-indigo-500/20 blur-3xl"></div>
           <div className="relative w-full max-w-sm h-[500px] flex items-center justify-center bg-gray-900/50 rounded-2xl border border-indigo-500/20 shadow-2xl shadow-indigo-900/30">
-            <img
-              src={Ebook}
-              alt="Capa do Ebook"
-              className="object-contain"
-            />
+            <img src={Ebook} alt="Capa do Ebook" className="object-contain" />
           </div>
         </motion.div>
 
@@ -84,20 +81,42 @@ export function PricingSection() {
           </div>
 
           <div className="text-center mt-4">
-            <p className="text-gray-400">
-              Por menos do que o valor de uma pizza, tenha acesso vitalício por
-              apenas:
+            <span className="font-bold text-indigo-300">
+              OFERTA EXCLUSIVA PARA ESTA PÁGINA
+            </span>
+            <p className="text-white">
+              Você chegou a uma página especial. Por isso, estamos oferecendo a
+              você a chance de destravar seu inglês com o método completo pelo
+              valor promocional de R$ 97. O objetivo é ajudar o maior número de
+              brasileiros a começar a falar inglês ainda esta semana. Corra e adquira logo, a qualquer momento o preço pode voltar ao normal.
             </p>
-            <p className="my-4 text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">
-              R$ 97,90
-            </p>
+            <div className="flex flex-col items-center my-6">
+              {/* Preço antigo riscado */}
+              <p>De </p>
+              <p className="text-2xl sm:text-3xl font-semibold text-red-400 line-through">
+                R$ 497,00
+              </p>
+              <p>Por Apenas</p>
+
+              {/* Preço novo destacado */}
+              <p className="my-2 text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500 animate-pulse">
+                R$ 97,00
+              </p>
+
+              {/* Economia */}
+              <span className="text-lg sm:text-xl text-green-400 font-semibold">
+                💰 Você economiza R$ 400!
+              </span>
+            </div>
+
             <p className="font-semibold text-white">Pagamento Único</p>
           </div>
 
           {/* CTA Final */}
           <Button
             size="lg"
-            className="w-full mt-4 py-7 text-lg font-bold text-white shadow-lg shadow-green-600/30 !bg-green-600 transition-all duration-300 transform hover:scale-105"
+            className="w-full mt-4 py-7 text-base lg:text-lg font-bold text-white shadow-lg shadow-green-600/30 !bg-green-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center whitespace-nowrap overflow-hidden text-ellipsis"
+            onClick={handleClickButton}
           >
             Quero Começar a Falar Inglês ESTA SEMANA!
           </Button>

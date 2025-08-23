@@ -88,7 +88,7 @@ export default function StorySection() {
               </CardContent>
             </Card>
             <motion.a
-              href="#pricing"
+              href="#oferta"
               whileHover={{ scale: 1.05 }}
               className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 px-6 py-3 rounded-2xl text-black font-semibold shadow-md shadow-indigo-600/20"
             >
