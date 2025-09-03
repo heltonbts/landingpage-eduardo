@@ -17,7 +17,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import ebookPlusCertificate from '../assets/logo_completo.png'
+import ebookPlusCertificate from "../assets/logo_completo.png";
 
 // Props opcionais
 type PremiumOfferSectionProps = {
@@ -126,21 +126,23 @@ export default function PremiumOfferSection({
               <Separator />
 
               <div>
-                <p className="text-sm text-muted-foreground">De</p>
-                <div className="flex items-end gap-3">
-                  <span className="text-2xl font-semibold line-through opacity-60 text-red-600">
-                    R$ 5.000,00
-                  </span>
-                  <span aria-hidden className="text-muted-foreground">
-                    →
-                  </span>
-                  <span className="text-4xl font-bold tracking-tight text-emerald-500">
-                    R$ 3.000,00
+                <div className="flex flex-col items-center my-6">
+                  <p>De </p>
+                  <p className="text-2xl sm:text-3xl font-semibold text-red-400 line-through">
+                    R$ 5.000
+                  </p>
+                  <p>Por Apenas</p>
+
+                  {/* Preço novo destacado */}
+                  <p className="my-2 text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500 animate-pulse">
+                    R$ 3.000
+                  </p>
+
+                  {/* Economia */}
+                  <span className="text-lg sm:text-xl text-green-400 font-semibold">
+                    💰 Você economiza R$ 2000!
                   </span>
                 </div>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  Condição exclusiva por tempo limitado.
-                </p>
               </div>
             </CardContent>
 
