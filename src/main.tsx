@@ -7,6 +7,7 @@ import { MethodSection } from "./components/Section3.tsx";
 import { TestimonialsSection } from "./components/TestimonialsSection.tsx";
 import { PricingSection } from "./components/PricingSection.tsx";
 import  { Faq } from "./components/Faq.tsx";
+import PremiumOfferSection from "./components/SectionPremium.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
     <MethodSection />
     <TestimonialsSection />
     <PricingSection />
+    <PremiumOfferSection />
     <Faq />
   </StrictMode>
 );
